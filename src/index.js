@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import ComponenteConClases from './components/ComponenteConClases';
+import ComponenteConFunciones from './components/ComponenteConFunciones';
+import ComponenteConFuncionesFlecha from './components/ComponenteConFuncionesFlecha';
+import Saludador from './components/Saludador';
+import ComponenteProps from './components/ComponenteProps';
+import ComponenteCondicional from './components/ComponenteCondicional';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ComponenteCondicional></ComponenteCondicional>
+    <ComponenteProps 
+      mensaje="hola"
+      valor={10}
+      activo={true}
+      profesores={['angel', 'bea', 'pepe', 'isabel']}
+      miFuncion={ num => num * num } 
+      miJsx={<p>Soy un JSX</p>}
+      otroComponente={<Saludador nombre="Juan" apellido="Perez" />}
+    ></ComponenteProps>
+    <Saludador nombre="Angel" apellido="Gonzalez"></Saludador>
+    <ComponenteConClases></ComponenteConClases>
+    <ComponenteConFunciones/>
+    <ComponenteConFuncionesFlecha></ComponenteConFuncionesFlecha>
   </React.StrictMode>,
   document.getElementById('root')
 );
