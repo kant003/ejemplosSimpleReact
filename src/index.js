@@ -8,8 +8,12 @@ import ComponenteConFuncionesFlecha from './components/ComponenteConFuncionesFle
 import Saludador from './components/Saludador';
 import ComponenteProps from './components/ComponenteProps';
 import ComponenteCondicional from './components/ComponenteCondicional';
+import ComponenteMapeado from './components/ComponenteMapeado';
+import ComponenteEventos from './components/ComponenteEventos';
 ReactDOM.render(
   <React.StrictMode>
+    <ComponenteEventos></ComponenteEventos>
+    <ComponenteMapeado></ComponenteMapeado>
     <ComponenteCondicional></ComponenteCondicional>
     <ComponenteProps 
       mensaje="hola"
