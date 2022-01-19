@@ -10,24 +10,18 @@ import ComponenteProps from './components/ComponenteProps';
 import ComponenteCondicional from './components/ComponenteCondicional';
 import ComponenteMapeado from './components/ComponenteMapeado';
 import ComponenteEventos from './components/ComponenteEventos';
+import Ejercicio1Temperatura from './components/Ejercicio1Temperatura';
+import Ejercicio2Random from './components/Ejercicio2Random';
+import ComponenteTemporizador from './components/ComponenteTemporizador';
+import ListaPokemons from './components/ListaPokemons';
+// npm i react-router-dom
+import {BrowserRouter} from 'react-router-dom'
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <ComponenteEventos></ComponenteEventos>
-    <ComponenteMapeado></ComponenteMapeado>
-    <ComponenteCondicional></ComponenteCondicional>
-    <ComponenteProps 
-      mensaje="hola"
-      valor={10}
-      activo={true}
-      profesores={['angel', 'bea', 'pepe', 'isabel']}
-      miFuncion={ num => num * num } 
-      miJsx={<p>Soy un JSX</p>}
-      otroComponente={<Saludador nombre="Juan" apellido="Perez" />}
-    ></ComponenteProps>
-    <Saludador nombre="Angel" apellido="Gonzalez"></Saludador>
-    <ComponenteConClases></ComponenteConClases>
-    <ComponenteConFunciones/>
-    <ComponenteConFuncionesFlecha></ComponenteConFuncionesFlecha>
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

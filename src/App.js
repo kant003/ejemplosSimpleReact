@@ -1,23 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {Routes, Route} from 'react-router-dom'
+import NavBar from './components/Navbar';
+import ComponenteConClases from './components/ComponenteConClases';
+import ComponenteConFunciones from './components/ComponenteConFunciones';
+import ComponenteConFuncionesFlecha from './components/ComponenteConFuncionesFlecha';
+import Saludador from './components/Saludador';
+import ComponenteProps from './components/ComponenteProps';
+import ComponenteCondicional from './components/ComponenteCondicional';
+import ComponenteMapeado from './components/ComponenteMapeado';
+import ComponenteEventos from './components/ComponenteEventos';
+import Ejercicio1Temperatura from './components/Ejercicio1Temperatura';
+import Ejercicio2Random from './components/Ejercicio2Random';
+import ListaPokemons from './components/ListaPokemons';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edita <code>src/App.js</code> y guarda para recargar.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Saludador nombre="Angel" apellido="Gonzalez" />} />
+        <Route path="listaPokemons"
+          element={<ListaPokemons cantidad={5}></ListaPokemons>} ></Route>
+        <Route path="random" element={<Ejercicio2Random></Ejercicio2Random>}> </Route>
+        <Route path="temp/:grados"
+          element={<Ejercicio1Temperatura grados={33}></Ejercicio1Temperatura>}></Route>
+        <Route path="*" element={<h1>404</h1>}></Route>
+      </Routes>
+
+      
+
+    <ComponenteEventos></ComponenteEventos>
+    <ComponenteMapeado></ComponenteMapeado>
+    <ComponenteCondicional></ComponenteCondicional>
+    <ComponenteProps
+      mensaje="hola"
+      valor={10}
+      activo={true}
+      profesores={['angel', 'bea', 'pepe', 'isabel']}
+      miFuncion={num => num * num}
+      miJsx={<p>Soy un JSX</p>}
+      otroComponente={<Saludador nombre="Juan" apellido="Perez" />}
+    ></ComponenteProps>
+    <ComponenteConClases></ComponenteConClases>
+    <ComponenteConFunciones />
+    <ComponenteConFuncionesFlecha></ComponenteConFuncionesFlecha>
     </div>
   );
 }

@@ -17,5 +17,6 @@ El componente pintara en pantalla la temperatura en grados Fº
 
 2- Crea un componente de react que al pulsar un boton muestra por pantalla un número random
 entre 1 y 6
+
 (solo necesitas saber: manejar estado (useState) y leer eventos (onClick) )
 
