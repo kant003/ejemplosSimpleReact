@@ -13,6 +13,7 @@ import ComponenteEventos from './components/ComponenteEventos';
 import Ejercicio1Temperatura from './components/Ejercicio1Temperatura';
 import Ejercicio2Random from './components/Ejercicio2Random';
 import ListaPokemons from './components/ListaPokemons';
+import ListaTecnologiasFirebase from './components/ListaTecnologiasFirebase';
 function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ function App() {
         <Route path="random" element={<Ejercicio2Random></Ejercicio2Random>}> </Route>
         <Route path="temp/:grados"
           element={<Ejercicio1Temperatura grados={33}></Ejercicio1Temperatura>}></Route>
+        <Route path="listaTecnologias" element={<ListaTecnologiasFirebase/>}></Route>
         <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>
 
