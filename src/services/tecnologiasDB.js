@@ -1,6 +1,6 @@
 import {app} from './firebase.js'
-
-const db = app.firestore();
+import {collection, orderBy, limit, query} from 'firebase/firestore'
+const db = getFirestore(app)
 
 const getAllTecnologias = collection(db, 'tecnologias');
 

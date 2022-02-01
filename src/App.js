@@ -13,7 +13,10 @@ import ComponenteEventos from './components/ComponenteEventos';
 import Ejercicio1Temperatura from './components/Ejercicio1Temperatura';
 import Ejercicio2Random from './components/Ejercicio2Random';
 import ListaPokemons from './components/ListaPokemons';
-import ListaTecnologiasFirebase from './components/ListaTecnologiasFirebase';
+import Ejercicio1EsPrimo from './components/Ejercicio1EsPrimo';
+import Ejercicio2Squad from './components/Ejercicio2Squad';
+import Ejercicio3Firebase from './components/Ejercicio3Firebase';
+import Ejercicio4Formulario from './components/Ejercicio4Formulario';
 function App() {
   return (
     <div>
@@ -25,7 +28,11 @@ function App() {
         <Route path="random" element={<Ejercicio2Random></Ejercicio2Random>}> </Route>
         <Route path="temp/:grados"
           element={<Ejercicio1Temperatura grados={33}></Ejercicio1Temperatura>}></Route>
-        <Route path="listaTecnologias" element={<ListaTecnologiasFirebase/>}></Route>
+        <Route path="isPrimo/:parametro" element={<Ejercicio1EsPrimo numero={5}/>}></Route>
+        <Route path="squad" element={<Ejercicio2Squad/>}></Route>
+        <Route path="frutas" element={<Ejercicio3Firebase/>}></Route>
+        <Route path="formulario" element={<Ejercicio4Formulario/>}></Route>
+        
         <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>
 

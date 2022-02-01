@@ -1,10 +1,12 @@
 import { onSnapshot } from '@firebase/firestore';
+import { useEffect, useState } from 'react';
+import { getAllTecnologias } from '../services/tecnologiasDB';
 function ListaTecnologiasFirebase() {
     const [tecnologias, setTecnologias] = useState([]);
 
     useEffect(() => {
         const unsubcribe = onSnapshot(
-            getAllTecnologias(),
+            getAllTecnologias,
             (snapshot) => {
                 setTecnologias(snapshot.docs.map(doc => doc.data()))
             }
