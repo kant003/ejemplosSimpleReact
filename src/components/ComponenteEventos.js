@@ -6,6 +6,8 @@ function ComponenteEventos() {
     //let cambiarContador = useState(2)[1] // funcion para cambiar el valor
     const [contador, setContador] = useState(2)
     const disminuirContador = () => setContador(contador - 1)
+    
+  
     return <div>
         <div>El valor del contador es:{contador}</div>
         <button onClick={() => setContador(contador + 1)}>Aumentar contador</button>

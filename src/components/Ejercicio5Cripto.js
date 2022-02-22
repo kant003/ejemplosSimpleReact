@@ -11,7 +11,7 @@ function Ejercicio5Cripto(props) {
         fetchData();
     }, [])
 
-    return (  );
+    return <div>euros</div>;
 }
 
 export default Ejercicio5Cripto;

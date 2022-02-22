@@ -18,6 +18,7 @@ function Ejercicio1EsPrimo(props) {
 
     return <h1> El numero {parametro}  
        {isPrimo(parametro) ? ' es primo' : ' no es primo'}
+       {isPrimo(parametro) & 'Si es primo'}
     </h1>
     
 }

@@ -1,5 +1,7 @@
+import { useParams } from "react-router-dom";
+
 function Ejercicio1Temperatura( {grados} ) {
-    const convertir = (g)=> (g * 9/5) + 32;
+    const convertir = g=> (g * 9/5) + 32;
     return <div>{convertir(grados)}</div>
 }
 

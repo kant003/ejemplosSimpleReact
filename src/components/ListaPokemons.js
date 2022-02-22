@@ -3,12 +3,13 @@ import Pokemon from "./Pokemon";
 
 function ListaPokemons({cantidad=10}) {
     const [pokemons, setPokemons] = useState([]);
+    
     useEffect(async () => {
         const url = 'https://pokeapi.co/api/v2/pokemon/?limit='+cantidad
         const request = await fetch(url)
         const data = await request.json()
         setPokemons(data.results)
-    }, [])
+    },[])
     return <div>
        { pokemons.map( pokemon => <Pokemon key={pokemon.name} url={pokemon.url} />) }
     </div>;

@@ -4,5 +4,5 @@ function ComponenteMapeado(props){
        {   nombres.map(fruta=><li key={fruta}>{fruta}</li>)   }
     </ul>
 }
-export default ComponenteMapeado;
 
+export default ComponenteMapeado;

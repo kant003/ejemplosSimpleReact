@@ -10,6 +10,10 @@ function NavBar() {
         <Link to="/squad">Ejercicio 2</Link> |
         <Link to="/frutas">Ejercicio 3</Link> |
         <Link to="/formulario">Ejercicio 4</Link> |
+        <Link to="/ejercicio2">Ejercicio 2 classroom</Link> |
+        <Link to="/ejercicio7">Ejercicio 7 Lista puntuaciones classroom</Link> |
+        <Link to="/ejercicio7V2">Ejercicio 7 Custom hook Lista puntuaciones classroom</Link> |
+        <Link to="/ejercicio8">Ejercicio 8 formulario</Link> |
     </div>
 }
 

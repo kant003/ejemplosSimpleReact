@@ -17,6 +17,10 @@ import Ejercicio1EsPrimo from './components/Ejercicio1EsPrimo';
 import Ejercicio2Squad from './components/Ejercicio2Squad';
 import Ejercicio3Firebase from './components/Ejercicio3Firebase';
 import Ejercicio4Formulario from './components/Ejercicio4Formulario';
+import Ejercicio2Classroom from './components/Ejercicio2Classroom';
+import Ejercicio7ListaPuntuaciones from './components/Ejercicio7ListaPuntuaciones';
+import Ejercicio7CustomHookListaPuntuaciones from './components/Ejercicio7CustomHookListaPuntuaciones';
+import Ejercicio8Formulario from './components/Ejercicio8Formulario';
 function App() {
   return (
     <div>
@@ -32,6 +36,10 @@ function App() {
         <Route path="squad" element={<Ejercicio2Squad/>}></Route>
         <Route path="frutas" element={<Ejercicio3Firebase/>}></Route>
         <Route path="formulario" element={<Ejercicio4Formulario/>}></Route>
+        <Route path="ejercicio2" element={<Ejercicio2Classroom/>}></Route>
+        <Route path="ejercicio7" element={<Ejercicio7ListaPuntuaciones/>}></Route>
+        <Route path="ejercicio7v2" element={<Ejercicio7CustomHookListaPuntuaciones/>}></Route>
+        <Route path="ejercicio8" element={<Ejercicio8Formulario/>}></Route>
         
         <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>
