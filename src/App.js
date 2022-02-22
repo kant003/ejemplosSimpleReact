@@ -21,6 +21,7 @@ import Ejercicio2Classroom from './components/Ejercicio2Classroom';
 import Ejercicio7ListaPuntuaciones from './components/Ejercicio7ListaPuntuaciones';
 import Ejercicio7CustomHookListaPuntuaciones from './components/Ejercicio7CustomHookListaPuntuaciones';
 import Ejercicio8Formulario from './components/Ejercicio8Formulario';
+import Ejercicio10FiltrarMayorPuntuacion from './components/Ejercicio10FiltrarMayorPuntuacion';
 function App() {
   return (
     <div>
@@ -40,6 +41,7 @@ function App() {
         <Route path="ejercicio7" element={<Ejercicio7ListaPuntuaciones/>}></Route>
         <Route path="ejercicio7v2" element={<Ejercicio7CustomHookListaPuntuaciones/>}></Route>
         <Route path="ejercicio8" element={<Ejercicio8Formulario/>}></Route>
+        <Route path="ejercicio10" element={<Ejercicio10FiltrarMayorPuntuacion/>}></Route>
         
         <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>

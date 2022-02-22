@@ -5,11 +5,13 @@ function Ejercicio8Formulario() {
 
     let handleSubmit = async (e) => {
         e.preventDefault();
+        //let token = leerElTokenDelLocalStorage();
         const rawResponse = await fetch('http://localhost:5300/puntuacion/', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                //'auth-token':token
             },
             body: JSON.stringify({ puntuacion:puntuacion, date: new Date() })
         });

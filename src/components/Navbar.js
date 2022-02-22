@@ -14,6 +14,7 @@ function NavBar() {
         <Link to="/ejercicio7">Ejercicio 7 Lista puntuaciones classroom</Link> |
         <Link to="/ejercicio7V2">Ejercicio 7 Custom hook Lista puntuaciones classroom</Link> |
         <Link to="/ejercicio8">Ejercicio 8 formulario</Link> |
+        <Link to="/ejercicio10">Ejercicio 10 filtrar</Link> |
     </div>
 }
 
