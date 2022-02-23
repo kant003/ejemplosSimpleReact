@@ -9,6 +9,7 @@ function Ejercicio10FiltrarMayorPuntuacion() {
         async function llamadaApi(){
             const request = await fetch('http://localhost:5300/puntuacion/?mayor='+puntuacionFiltro)
             const data = await request.json()
+            console.log(data)
             setPuntuaciones(data.datos)
         }
         llamadaApi()
@@ -24,7 +25,7 @@ function Ejercicio10FiltrarMayorPuntuacion() {
             <br/>
             <input type="submit" value="Filtrar"/>
         </form>
-        {puntuaciones.map(p => <div key={e._id}>{p.puntuacion}</div>)}
+        {puntuaciones.map(p => <div key={p._id}>{p.puntuacion}</div>)}
     </>;
 }
 
