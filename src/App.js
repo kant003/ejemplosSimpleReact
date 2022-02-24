@@ -23,6 +23,7 @@ import Ejercicio7CustomHookListaPuntuaciones from './components/Ejercicio7Custom
 import Ejercicio8Formulario from './components/Ejercicio8Formulario';
 import Ejercicio10FiltrarMayorPuntuacion from './components/Ejercicio10FiltrarMayorPuntuacion';
 import ComponenteMui from './components/ComponenteMui';
+import BuscarPokemon from './components/BuscarPokemon';
 function App() {
   return (
     <div>
@@ -44,6 +45,7 @@ function App() {
         <Route path="ejercicio8" element={<Ejercicio8Formulario/>}></Route>
         <Route path="ejercicio10" element={<Ejercicio10FiltrarMayorPuntuacion/>}></Route>
         <Route path="mui" element={<ComponenteMui/>}></Route>
+        <Route path="buscarPokemon" element={<BuscarPokemon/>}></Route>
         
         <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>

@@ -1,14 +1,29 @@
 Github: https://github.com/kant003/ejemplosSimpleReact
 
+# Crear el proyecto
 npx create-react-app ejemplossimples
 
-
+# Probar el proyecto en un servidor local
 npm start
 
-npm build
+# Deploy en Netlify
+npm install netlify-cli -g
+netlify deploy
+.build
 
+# Deploy en github
+npm install --save-dev gh-pages
+Edita el packege.json
+    "homepage":"https://github.com/kant003/ejemplosSimpleReact.git"
 
-React
+    "scripts":{
+        "build":"npm run build",
+        "deploy":"gh-pages -d build"
+    }
+
+npm run build
+npm run deploy
+
 
 1- Crea un componente de react al que le puedas pasar como prop un valor que respresente
 la temperatura en grados Cº

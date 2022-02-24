@@ -16,6 +16,7 @@ function NavBar() {
         <Link to="/ejercicio8">Ejercicio 8 formulario</Link> |
         <Link to="/ejercicio10">Ejercicio 10 filtrar</Link> |
         <Link to="/mui">React Material</Link> |
+        <Link to="/buscarPokemon">Buscar pokemon</Link> |
     </div>
 }
 
